@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category><pattern>i am a *</pattern>
+<template> <srai> i word in <star/> </srai> </template>
+</category>
+
+<category><pattern>i am *</pattern>
+<template> Hello <set name = "username" ><star/></set></template>
+</category>
+
+<category><pattern>my name is *</pattern>
+<template> Hello <set name = "username" ><star/></set></template>
+</category>
+
+<category><pattern>i work as * in *</pattern>
+<template>  <set name = "occupation" ><star index = "1"/></set> <set name = "work_place" ><star index = "2"/></set></template>
+</category>
+
+<category><pattern>i work in * as *</pattern>
+<template>  <set name = "occupation" ><star index = "2"/></set> <set name = "work_place" ><star index = "1"/></set></template>
+</category>
+
+<category><pattern>i work in *</pattern>
+<template><set name = "work_place"><star/></set> thats a Great Place to work , and I hope u have a lot of friends over there </template>
+</category>
+
+<category><pattern>i work as *</pattern>
+<template>  <set name = "occupation" ><star/></set></template>
+</category>
+
+<category><pattern>i study in *</pattern>
+<template>  <set name = "institution" ><star/></set> I think you have done a lot of hardwork to join there </template>
+</category>
+
+<category><pattern> my dog name is * </pattern>
+<template> <set name = "pet_name"><star/></set>, That's a very nice name , I like it too. </template>
+</category>
+
+<category><pattern> my pet name is * </pattern>
+<template> <set name = "pet_name"><star/></set>, That's a very nice name , I like it too. </template>
+</category>
+
+<category><pattern> my dog * </pattern>
+<template> yes i know <get name = "dog_name"/> is a Great pet </template>
+</category>
+
+<category><pattern> my pet * </pattern>
+<template> yes i know <get name = "dog_name"/> is a Great pet </template>
+</category>
+
+
+
+</aiml>

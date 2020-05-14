@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category><pattern>hey</pattern>
+<template>
+<random>
+<li> Hello Amigo :) </li>
+<li> Hey <get name = "username"/> </li>
+<li> Hello Darling </li>
+<li> wassup wassup <get name = "username"/> </li>
+</random>
+</template>
+</category>
+
+<category><pattern>hey *</pattern>
+<template> 
+<srai>hey</srai>
+</template>
+</category>
+
+<category><pattern>hello *</pattern>
+<template> 
+<srai>hey</srai>
+</template>
+</category>
+
+<category><pattern>hello</pattern>
+<template> 
+<srai>hey</srai>
+</template>
+</category>
+
+<category><pattern>good morning</pattern>
+<template> Good Morning <get name = "username"/> , have a Great Day ahead :) </template>
+</category>
+
+<category><pattern>good afternoon</pattern>
+<template> Good Afternoon how was ur day </template>
+</category>
+
+<category><pattern>good evening</pattern>
+<template> <srai> good afternoon </srai> </template>
+</category>
+
+<category><pattern>good</pattern>
+<that> GOOD AFTERNOON HOW WAS UR DAY </that>
+<template> I am so glad that u had a great time </template>
+</category>
+
+<category><pattern>fine</pattern>
+<that> GOOD AFTERNOON HOW WAS UR DAY </that>
+<template> I am so glad that u had a great time </template>
+</category>
+
+<category><pattern>nice</pattern>
+<that> GOOD AFTERNOON HOW WAS UR DAY </that>
+<template> I am so glad that u had a great time </template>
+</category>
+
+<category><pattern>Bad</pattern>
+<that> GOOD AFTERNOON HOW WAS UR DAY </that>
+<template> why did you have a bad day </template>
+</category>
+
+<category><pattern>*</pattern>
+<that> WHY DID YOU HAVE A BAD DAY </that>
+<template> I am so sorry about that </template>
+</category>
+
+<category><pattern>*</pattern>
+<that> GOOD AFTERNOON HOW WAS UR DAY </that>
+<template> I don't know what to say for that :( </template>
+</category>
+
+<category><pattern>good night</pattern>
+<template> 
+<random>
+<li>Good Night <get name = "username"/> , Hot Dreams :) </li>
+<li>Good Night <get name = "username"/> , Sweet Dreams :) </li>
+<li>So fast :(  , ok then Good Night <get name = "username"/> , I will be waiting for you </li>
+<li>Good Night <get name = "username"/> , Have a nice dream about u and me :) </li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern> i feel bored </pattern>
+<template> <think><set name = "topic">topics</set></think>
+Here is what we can do./
+ I can tell you a joke./
+ We can play a game.</template>
+</category>
+
+<category><pattern> tell * knock knock joke </pattern>
+<template> Knock Knock. </template>
+</category>
+
+<category><pattern> tell knock knock joke </pattern>
+<template> Knock Knock. </template>
+</category>
+
+<category><pattern> who is there * </pattern>
+<that> KNOCK KNOCK </that>
+<template> 
+<random>
+<li> Hawaii </li>
+<li> Nana </li>
+<li> Tank </li>
+<li> Aida </li>
+<li> Cargo </li>
+<li> Oswald </li>
+<li> Police </li>
+</random>
+</template>
+</category>
+
+<category><pattern> who is there </pattern>
+<that> KNOCK KNOCK </that>
+<template> 
+<random>
+<li> Hawaii </li>
+<li> Nana </li>
+<li> Tank </li>
+<li> Aida </li>
+<li> Cargo </li>
+<li> Oswald </li>
+<li> Police </li>
+</random>
+</template>
+</category>
+
+<category><pattern> hawaii who * </pattern>
+<that> HAWAII </that>
+<template> I'm fine, Hawaii you? </template>
+</category>
+
+<category><pattern> hawaii who </pattern>
+<that> HAWAII </that>
+<template> I'm fine, Hawaii you? </template>
+</category>
+
+<category><pattern> nana who * </pattern>
+<that> NANA </that>
+<template> Nana your business. </template>
+</category>
+
+<category><pattern> nana who </pattern>
+<that> NANA </that>
+<template> Nana your business. </template>
+</category>
+
+<category><pattern> tank who * </pattern>
+<that> TANK </that>
+<template> You're welcome. </template>
+</category>
+
+<category><pattern> tank who </pattern>
+<that> TANK </that>
+<template> You're welcome. </template>
+</category>
+
+<category><pattern> police who * </pattern>
+<that> POLICE </that>
+<template> Police stop telling these awful knock knock jokes! </template>
+</category>
+
+<category><pattern> police who </pattern>
+<that> POLICE </that>
+<template> Police stop telling these awful knock knock jokes! </template>
+</category>
+
+<category><pattern> cargo who * </pattern>
+<that> CARGO </that>
+<template> No, car go "beep beep"! </template>
+</category>
+
+<category><pattern> cargo who </pattern>
+<that> CARGO </that>
+<template> No, car go "beep beep"! </template>
+</category>
+
+<category><pattern> tell joke </pattern>
+<template> 
+<random>
+<li> Doctor: "I'm sorry but you suffer from a terminal illness and have only 10 to live."/
+Patient: "What do you mean, 10? 10 what? Months? Weeks?!"/
+Doctor: "Nine." </li>
+<li> Job interviewer: “And where would you see yourself in five years’ time Mr. Jeffries?"/
+Mr. Jeffries: "Personally I believe my biggest weakness is in listening." </li>
+<li> I dreamed I was forced to eat a giant marshmallow./
+When I woke up, my pillow was gone. </li>
+<li> A mother asks her son: "Anton, do you think I’m a bad mom?"/
+Son: "My name is Paul." </li>
+<li> Doctor: You're obese./
+Patient: For that I definitely want a second opinion./
+Doctor: You’re quite ugly, too. </li>
+<li> Guest to the waiter: “Can you bring me what the lady at the next table is having?”/
+Waiter: “Sorry, sir, but I’m pretty sure she wants to eat it herself.” </li>
+<li> Husband: Wow, honey, you look really different today. Did you do something to your hair?/
+Wife: Michael, I’m over here! </li>
+<li>
+Boy complains to his father: You told me to put a potato in my swimming trunks!/
+                             You said it would impress the girls at the pool! But you forgot to mention one thing!/
+Father: Really, what?/
+Boy: That the potato should go in the front. </li>
+<li> One company owner asks another: “Tell me, Bill, how come your employees are always on time in the mornings?”/
+Bill replies: “Easy. 30 employees and 20 parking spaces.” </li>
+</random>
+</template>
+</category>
+
+<category><pattern> tell * joke </pattern>
+<template> <srai> tell joke </srai> </template>
+</category>
+
+<category><pattern> tell * joke * </pattern>
+<template> <srai> tell joke </srai></template>
+</category>
+
+
+
+</aiml>
