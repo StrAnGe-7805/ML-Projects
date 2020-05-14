@@ -1,0 +1,16 @@
+<aiml version = "1.0">
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <!-- Load standard AIML set -->
+            <learn>instructions.aiml</learn>
+            <learn>funtalk.aiml</learn>
+            <learn>aboutuser.aiml</learn>
+            <learn>music.aiml</learn>
+            <learn>movies.aiml</learn>
+            <learn>series.aiml</learn>
+            <learn>games.aiml</learn>
+            <learn>mail.aiml</learn>
+        </template>
+    </category>
+</aiml>
