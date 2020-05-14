@@ -1,0 +1,3 @@
+8 6 1 40
+Total correct predictions :  48
+Total wrong predictions :  7
