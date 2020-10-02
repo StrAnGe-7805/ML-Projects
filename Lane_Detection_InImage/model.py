@@ -62,7 +62,7 @@ cropped_image = region_of_intrests(cany)
 lines = cv2.HoughLinesP(cropped_image, 2 , np.pi/180 , 15 , np.array([]) , minLineLength = 1 , maxLineGap = 5 )
 
 
-# averaged_lines = average_slpoe_intercept(lane_image,lines)  # If u need to ues this line then replace lines in "line_image" with "averaged_lines" .
+# averaged_lines = average_slpoe_intercept(lane_image,lines)  # If u need to use this line then replace "lines" in "line_image" with "averaged_lines" .
 
 
 line_image = display_lines(lane_image,lines)
